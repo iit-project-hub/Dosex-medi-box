@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="DoseX Smart Medicine Dispenser Robot - Project Showcase">
+<title>DoseX | Smart Medicine Dispenser Robot</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div class="progress"></div>
+<header class="navbar">
+  <a class="brand" href="#home"><span class="brand-mark">✚</span> Dose<span>X</span></a>
+  <button class="menu-toggle" aria-label="Toggle menu">☰</button>
+  <nav>
+    <a href="#overview">Overview</a><a href="#features">Features</a><a href="#workflow">How It Works</a>
+    <a href="#specs">Specifications</a><a href="#future">Future</a>
+  </nav>
+</header>
+
+<main>
+<section id="home" class="hero section">
+  <div class="hero-copy reveal">
+    <p class="eyebrow"><span class="pulse"></span> SMART HEALTHCARE ROBOTICS</p>
+    <h1>Medicine care,<br><span>reimagined.</span></h1>
+    <p class="hero-text">DoseX is a smart medicine dispenser robot designed to support scheduled medication, secure authentication, intelligent mobility, and safer everyday healthcare.</p>
+    <div class="hero-actions"><a class="btn primary" href="#overview">Explore Project ↗</a><a class="btn ghost" href="#workflow">See how it works ↓</a></div>
+    <div class="hero-stats"><div><strong>7"</strong><small>Front display</small></div><div><strong>12+</strong><small>Core features</small></div><div><strong>320</strong><small>mm target height</small></div></div>
+  </div>
+  <div class="robot-scene reveal">
+    <div class="orbit orbit-one"></div><div class="orbit orbit-two"></div>
+    <div class="robot">
+      <div class="robot-top"></div><div class="robot-body">
+        <div class="screen"><span class="screen-dot"></span><b>DOSEX</b><small>READY TO HELP</small><div class="screen-line"></div></div>
+        <div class="fingerprint">◎</div><div class="sensor s1"></div><div class="sensor s2"></div>
+        <div class="medicine-door"><span>MEDICINE</span><b>COLLECT</b></div>
+      </div>
+      <div class="robot-base"><div class="track"></div><div class="track"></div></div>
+    </div>
+    <div class="floor-glow"></div>
+    <span class="floating-tag tag-one">◉ AUTHENTICATED</span><span class="floating-tag tag-two">▣ SMART DISPENSING</span>
+  </div>
+</section>
+
+<section id="overview" class="section overview">
+  <div class="section-heading reveal"><p class="eyebrow">01 / PROJECT OVERVIEW</p><h2>One robot.<br><span>Many layers of care.</span></h2></div>
+  <div class="overview-grid">
+    <div class="overview-card large reveal"><div class="icon">✦</div><h3>Designed around people</h3><p>DoseX combines scheduled medication management, user authentication, automatic medicine selection, a front collection compartment, robot mobility, obstacle sensing, and a docking concept in one compact platform.</p><div class="mini-line"></div><p class="muted">A concept focused on accessibility, safety, and dependable medication routines.</p></div>
+    <div class="overview-card reveal"><div class="icon">⌁</div><h3>Intelligent by design</h3><p>The controller maps each scheduled medicine to its assigned internal tray and activates the relevant dispensing actuator only when the request is valid.</p></div>
+    <div class="overview-card reveal"><div class="icon">◈</div><h3>Safety first</h3><p>Invalid authentication and requests outside the permitted schedule must never release medicine.</p></div>
+  </div>
+</section>
+
+<section id="features" class="section dark-section">
+  <div class="section-heading reveal"><p class="eyebrow">02 / CAPABILITIES</p><h2>Built for smarter<br><span>medication support.</span></h2><p>Explore the core capabilities envisioned for DoseX.</p></div>
+  <div class="feature-grid">
+    <article class="feature-card reveal"><span>01</span><h3>Automatic Dispensing</h3><p>Dispenses the correct medicine at the scheduled time without manual selection.</p></article>
+    <article class="feature-card reveal"><span>02</span><h3>Smart Reminders</h3><p>Alerts the user when it is time to take medication.</p></article>
+    <article class="feature-card reveal"><span>03</span><h3>Fingerprint Authentication</h3><p>Verifies the authorized user before dispensing.</p></article>
+    <article class="feature-card reveal"><span>04</span><h3>Multiple Compartments</h3><p>Stores medicines in separate, organized internal trays.</p></article>
+    <article class="feature-card reveal"><span>05</span><h3>Self-Moving Robot</h3><p>Moves toward the user when called or programmed.</p></article>
+    <article class="feature-card reveal"><span>06</span><h3>Obstacle Detection</h3><p>Uses sensors to detect obstacles and stop or redirect safely.</p></article>
+    <article class="feature-card reveal"><span>07</span><h3>App & Button Control</h3><p>Supports user or caregiver control through interfaces.</p></article>
+    <article class="feature-card reveal"><span>08</span><h3>Caregiver Notifications</h3><p>Can report missed doses, access attempts, and system issues.</p></article>
+    <article class="feature-card reveal"><span>09</span><h3>Safety Decision System</h3><p>Classifies situations as known, uncertain, or unsafe.</p></article>
+    <article class="feature-card reveal"><span>10</span><h3>Docking & Charging</h3><p>Returns to a station for charging and storage.</p></article>
+    <article class="feature-card reveal"><span>11</span><h3>Dose Monitoring</h3><p>Supports dose verification, refill alerts, and records.</p></article>
+    <article class="feature-card reveal"><span>12</span><h3>Voice & IoT Support</h3><p>Envisions voice commands, live status, and connectivity.</p></article>
+  </div>
+</section>
+
+<section id="workflow" class="section">
+  <div class="section-heading reveal"><p class="eyebrow">03 / SYSTEM LOGIC</p><h2>From schedule<br><span>to safe delivery.</span></h2></div>
+  <div class="workflow">
+    <div class="workflow-step reveal"><div class="step-number">01</div><h3>Schedule stored</h3><p>The DoseX application/controller stores the medication timetable and tray assignments.</p></div>
+    <div class="workflow-step reveal"><div class="step-number">02</div><h3>User authenticates</h3><p>The user provides authentication at the permitted medication time.</p></div>
+    <div class="workflow-step reveal"><div class="step-number">03</div><h3>Controller validates</h3><p>The system checks timing, identity, and the assigned medicine tray.</p></div>
+    <div class="workflow-step reveal"><div class="step-number">04</div><h3>Dose presented</h3><p>If valid, the actuator releases the dose to the front collection compartment.</p></div>
+  </div>
+  <div class="schedule-card reveal"><div><p class="eyebrow">EXAMPLE MEDICATION SCHEDULE</p><h3>Daily dose planner</h3></div><div class="schedule-row"><b>08:00</b><span>Medicine A</span><small>Tray XYZ</small></div><div class="schedule-row"><b>13:00</b><span>Medicine B</span><small>Tray ABC</small></div><div class="schedule-row"><b>20:00</b><span>Medicine C</span><small>Tray PQR</small></div></div>
+</section>
+
+<section class="section safety-section">
+  <div class="section-heading reveal"><p class="eyebrow">04 / SAFETY ARCHITECTURE</p><h2>When uncertain,<br><span>pause and verify.</span></h2></div>
+  <div class="safety-grid">
+    <div class="safety-card known reveal"><div class="safety-symbol">✓</div><h3>Known</h3><p>Valid identity, valid schedule, and known medicine mapping.</p><b>Acts automatically</b></div>
+    <div class="safety-card uncertain reveal"><div class="safety-symbol">?</div><h3>Uncertain</h3><p>Ambiguous input, incomplete verification, or unexpected condition.</p><b>Stops and requests verification</b></div>
+    <div class="safety-card unsafe reveal"><div class="safety-symbol">!</div><h3>Unknown / Unsafe</h3><p>Invalid authentication, unsafe access, or system problem.</p><b>Locks or stops and requests help</b></div>
+  </div>
+  <p class="note reveal">Prototype note: fingerprint authentication is simulated using a pushbutton in Tinkercad.</p>
+</section>
+
+<section id="specs" class="section dark-section">
+  <div class="section-heading reveal"><p class="eyebrow">05 / DESIGN TARGETS</p><h2>Compact form.<br><span>Thoughtful engineering.</span></h2></div>
+  <div class="specs-layout">
+    <div class="blueprint reveal"><div class="blueprint-grid"></div><div class="blueprint-robot"><div class="bp-screen"></div><div class="bp-door"></div><div class="bp-track"></div></div><span class="dimension d-height">320 mm</span><span class="dimension d-width">350 mm</span><span class="dimension d-length">420 mm</span></div>
+    <div class="spec-table reveal"><div class="spec-row"><span>Overall height</span><b>320 mm</b></div><div class="spec-row"><span>Side-view length</span><b>420 mm</b></div><div class="spec-row"><span>Front width</span><b>350 mm</b></div><div class="spec-row"><span>Display</span><b>7 inches</b></div><div class="spec-row"><span>Medicine door</span><b>180 × 220 mm</b></div><div class="spec-row"><span>Top lid</span><b>350 × 250 mm</b></div><p class="note">All dimensions are approximate design targets and should be validated before fabrication.</p></div>
+  </div>
+</section>
+
+<section id="future" class="section">
+  <div class="section-heading reveal"><p class="eyebrow">06 / ROADMAP</p><h2>The next chapter<br><span>of DoseX.</span></h2><p>Potential enhancements for future iterations.</p></div>
+  <div class="roadmap">
+    <div class="roadmap-item reveal"><span>01</span><h3>Real-world sensing</h3><p>Fingerprint module, real-time clock, optical or weight-based dispensing verification.</p></div>
+    <div class="roadmap-item reveal"><span>02</span><h3>Connected care</h3><p>Wi-Fi/Bluetooth, caregiver notifications, inventory and battery monitoring.</p></div>
+    <div class="roadmap-item reveal"><span>03</span><h3>Autonomous assistance</h3><p>Mapping, voice guidance, tamper detection, and refined navigation.</p></div>
+    <div class="roadmap-item reveal"><span>04</span><h3>Production readiness</h3><p>Validated mechanical architecture and a reliable dispensing mechanism.</p></div>
+  </div>
+</section>
+</main>
+
+<footer><div class="brand">✚ Dose<span>X</span></div><p>Smart medicine support through thoughtful robotics.</p><small>© <span id="year"></span> DoseX Project Showcase · Built for GitHub Pages</small></footer>
+<script src="script.js"></script>
+</body>
+</html>
